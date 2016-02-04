@@ -27,6 +27,8 @@ set t_CO=256
 set number
 "Set font type and font size.
 set guifont=Fira_Code:h17
+"We don't want Gui tabs.
+set guioptions-=e
 "Graphical Vim specific line-height.
 set linespace=15
 "Hide the left and right scrollbars on windows and splits
