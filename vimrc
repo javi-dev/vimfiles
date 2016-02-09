@@ -19,10 +19,10 @@ set shiftwidth=4
 set expandtab
 
 "-----------------Visuals----------------"
+"Use 256 colors. This is useful for Terminal Vim.
+set t_Co=256
 "Apply the atom-dark colorscheme.
 colorscheme  atom-dark
-"Use 256 colors. This is useful for Terminal Vim.
-set t_CO=256
 "Let's activate line numbers.
 set number
 
