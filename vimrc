@@ -62,8 +62,6 @@ nmap <Leader>ev :tabedit $HOME\vimfiles\vimrc<cr>
 nmap <Leader><space> :nohlsearch<cr>
 "Activate/deactivate full screen with function key <F11>.
 map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
-"Make NERDTree easier to toggle.
-nmap <A-1> :NERDTreeToggle<cr>
 "Fix PSR-2 in the current file.
 nmap <Leader>p2 :!php-cs-fixer fix "%" --level=psr2<cr>
 
@@ -84,6 +82,8 @@ nmap <A-e> :CtrlPMRUFiles<cr>
 "/
 " NERDTree
 "/
+"Make NERDTree easier to toggle.
+nmap <A-1> :NERDTreeToggle<cr>
 "I want to use Vinegar for netrw, not NERDTree
 let NERDTreeHijackNetrw = 0
 
