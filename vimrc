@@ -57,7 +57,7 @@ nmap <C-L> <C-W><C-L>
 
 "----------------Mappings----------------"
 "Make it easy to edit the Vimrc file.
-nmap <Leader>ev :tabedit $MYVIMRC<cr>
+nmap <Leader>ev :tabedit $HOME\vimfiles\vimrc<cr>
 "Clear the highlighted search.
 nmap <Leader><space> :nohlsearch<cr>
 "Activate/deactivate full screen with function key <F11>.
