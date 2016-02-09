@@ -9,7 +9,6 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tobyS/vmustache'
-Plugin 'tobyS/pdv'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

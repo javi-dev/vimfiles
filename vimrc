@@ -68,9 +68,6 @@ nmap <A-1> :NERDTreeToggle<cr>
 nmap <c-R> :CtrlPBufTag<cr>
 "Make CtrlP show Most Recently Used files.
 nmap <A-e> :CtrlPMRUFiles<cr>
-"Make PDV generate the dock block using the templates from the template
-"directory.
-nmap <Leader>pd :call pdv#DocumentCurrentLine()<cr>
 "Fix PSR-2 in the current file.
 nmap <Leader>p2 :!php-cs-fixer fix "%" --level=psr2<cr>
 
@@ -82,7 +79,6 @@ nmap <Leader>p2 :!php-cs-fixer fix "%" --level=psr2<cr>
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 "Display CtrlP at the top, sort top to bottom, 30 results.
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
-let g:pdv_template_dir = $HOME ."/vimfiles/bundle/pdv/templates"
 "Use git for searches, and ignore what's already in the .gitignore
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 "/
