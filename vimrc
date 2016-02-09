@@ -25,17 +25,6 @@ colorscheme  atom-dark
 set t_CO=256
 "Let's activate line numbers.
 set number
-"Set font type and font size.
-set guifont=Fira_Code:h17
-"We don't want Gui tabs.
-set guioptions-=e
-"Graphical Vim specific line-height.
-set linespace=15
-"Hide the left and right scrollbars on windows and splits
-set guioptions-=l
-set guioptions-=L
-set guioptions-=r
-set guioptions-=R
 
 "-----------------Search-----------------"
 "Highlight search result(s).
@@ -60,8 +49,6 @@ nmap <C-L> <C-W><C-L>
 nmap <Leader>ev :tabedit $HOME\vimfiles\vimrc<cr>
 "Clear the highlighted search.
 nmap <Leader><space> :nohlsearch<cr>
-"Activate/deactivate full screen with function key <F11>.
-map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
 "Fix PSR-2 in the current file.
 nmap <Leader>p2 :!php-cs-fixer fix "%" --level=psr2<cr>
 
@@ -92,9 +79,4 @@ let NERDTreeHijackNetrw = 0
 augroup autosourcing
 	autocmd!
 	autocmd BufWritePost .vimrc source %
-augroup END
-"I think this loads the full screen plugin or something.
-augroup fullscreen
-	autocmd!
-	autocmd VimEnter * call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)
 augroup END
