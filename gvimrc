@@ -16,6 +16,8 @@ set guioptions-=r
 set guioptions-=R
 "Get rid of the background color for the line numbers.
 hi LineNr guibg=bg
+"Get rid of the vertical split borders
+hi vertsplit guifg=bg guibg=bg
 
 "=========== Font ===========
 "Set font type and font size.
