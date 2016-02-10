@@ -14,6 +14,8 @@ set guioptions-=l
 set guioptions-=L
 set guioptions-=r
 set guioptions-=R
+"Get rid of the background color for the line numbers.
+hi LineNr guibg=bg
 
 "=========== Font ===========
 "Set font type and font size.
