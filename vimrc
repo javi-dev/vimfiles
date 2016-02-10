@@ -60,8 +60,30 @@ nmap <Leader>p2 :!php-cs-fixer fix "%" --level=psr2<cr>
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 "Display CtrlP at the top, sort top to bottom, 30 results.
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
-"Use git for searches, and ignore what's already in the .gitignore
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+if executable('ag')
+    let s:ctrlp_fallback = 'ag -i --nocolor --nogroup --hidden -g "" %s'
+elseif executable('ack-grep')
+    let s:ctrlp_fallback = 'ack-grep %s --nocolor -f'
+elseif executable('ack')
+    let s:ctrlp_fallback = 'ack %s --nocolor -f'
+elseif (has("win32") || has("win64") || has("win95") || has("win16"))
+    let s:ctrlp_fallback = 'dir %s /-n /b /s /a-d'
+else
+    let s:ctrlp_fallback = 'find %s -type f'
+endif
+if exists("g:ctrlp_user_command")
+    unlet g:ctrlp_user_command
+endif
+let g:ctrlp_user_command = {
+            \ 'types': {
+            \ 1: ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others'],
+            \ 2: ['.hg', 'hg --cwd %s locate -I .'],
+            \ },
+            \ 'fallback': s:ctrlp_fallback
+            \ }
+
 "Make CtrlP search for tags/symbols.
 nmap <A-r> :CtrlPBufTag<cr>
 "Make CtrlP show Most Recently Used files.
