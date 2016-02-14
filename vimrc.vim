@@ -1,13 +1,15 @@
 "We want the latest Vim settings/options.
 set nocompatible
+"The default is \, but a comma is much better.
+let mapleader=','
 "Source the plugins file.
 so $HOME/vimfiles/plugins.vim
+"Source the laravel specific file.
+so $HOME/vimfiles/laravel.vim
 "Enable syntax highlighting.
 syntax enable
 "Make backspace behave like every other editor.
 set backspace=indent,eol,start
-"The default is \, but a comma is much better.
-let mapleader=','
 
 "--------------Indentation---------------"
 filetype plugin indent on
