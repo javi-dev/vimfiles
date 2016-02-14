@@ -46,7 +46,7 @@ nmap <C-L> <C-W><C-L>
 
 "----------------Mappings----------------"
 "Make it easy to edit the Vimrc file.
-nmap <Leader>ev :tabedit $HOME\vimfiles\vimrc<cr>
+nmap <Leader>ev :tabedit $HOME\vimfiles\vimrc.vim<cr>
 "Clear the highlighted search.
 nmap <Leader><space> :nohlsearch<cr>
 "Fix PSR-2 in the current file.
