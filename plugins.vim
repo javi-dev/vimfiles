@@ -11,6 +11,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tobyS/vmustache'
 Plugin 'gosukiwi/vim-atom-dark'
 Plugin 'rking/ag.vim'
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

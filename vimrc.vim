@@ -97,6 +97,16 @@ nmap <A-e> :CtrlPMRUFiles<cr>
 nmap <A-1> :NERDTreeToggle<cr>
 "I want to use Vinegar for netrw, not NERDTree
 let NERDTreeHijackNetrw = 0
+"/
+" Syntastic
+"/
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 "--------------Auto-Commands--------------"
 "Automatically source the Vimrc file on save.
