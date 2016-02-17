@@ -10,6 +10,8 @@ so $HOME/vimfiles/laravel.vim
 syntax enable
 "Make backspace behave like every other editor.
 set backspace=indent,eol,start
+"No bells, tyvm
+set noerrors visualbell t_vb=
 
 "--------------Indentation---------------"
 filetype plugin indent on
