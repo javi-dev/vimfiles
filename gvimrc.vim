@@ -18,6 +18,9 @@ set guioptions-=R
 hi LineNr guibg=bg
 "Get rid of the vertical split borders
 hi vertsplit guifg=bg guibg=bg
+"Even if it's set in the .vimrc, it gets overwritten by the GUI,
+"so it must be set again here
+set visualbell t_vb=
 
 "=========== Font ===========
 "Set font type and font size.
