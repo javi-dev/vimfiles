@@ -13,6 +13,7 @@ Plugin 'gosukiwi/vim-atom-dark'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'msanders/snipmate.vim'
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
