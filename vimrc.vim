@@ -112,10 +112,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 "/
-" snipMate.vim
-"/
-let g:snippets_dir='$HOME\vimfiles\snippets,$HOME\vimfiles\bundle\snipmate.vim\snippets'
-"/
 " vim-php-namespace
 "/
 function! IPhpInsertUse()
