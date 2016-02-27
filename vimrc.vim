@@ -12,6 +12,8 @@ syntax enable
 set backspace=indent,eol,start
 "No bells, tyvm
 set noerrorbells visualbell t_vb=
+"Automatically write the file. See :help for when.
+set autowriteall
 
 "--------------Indentation---------------"
 filetype plugin indent on
