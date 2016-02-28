@@ -14,6 +14,8 @@ set backspace=indent,eol,start
 set noerrorbells visualbell t_vb=
 "Automatically write the file. See :help for when.
 set autowriteall
+"Use UTF-8 instead of the default Latin-1
+set encoding=utf-8
 
 "--------------Indentation---------------"
 filetype plugin indent on
