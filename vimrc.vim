@@ -21,6 +21,8 @@ set encoding=utf-8
 filetype plugin indent on
 "Show existing tab with 8 spaces width.
 set tabstop=8
+"On pressing tab in insert mode, use 4 spaces width.
+set softtabstop=4
 "When indenting with '>', use 4 spaces width.
 set shiftwidth=4
 "On pressing tab, insert 4 spaces.
