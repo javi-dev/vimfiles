@@ -29,11 +29,7 @@ set guifont=Fira_Code:h17
 set linespace=15
 
 "=========== Full Screen ===========
+"Start in fullscreen
+autocmd GUIEnter * silent! WToggleFullscreen
 "Activate/deactivate full screen with function key <F11>.
-map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
-
-"I think this loads the full screen plugin or something.
-augroup fullscreen
-	autocmd!
-	autocmd VimEnter * call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)
-augroup END
+map <F11> :WToggleFullscreen<CR>
