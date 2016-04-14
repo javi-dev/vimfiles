@@ -21,6 +21,7 @@ Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'ervandew/supertab'
 Plugin 'kkoenig/wimproved.vim'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'mattn/emmet-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

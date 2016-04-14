@@ -131,6 +131,10 @@ function! IPhpExpandClass()
 endfunction
 autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
 autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
+"/
+" Emmet
+"/
+imap <expr> <Leader><Tab> emmet#expandAbbrIntelligent("\<tab>")
 
 "--------------Auto-Commands--------------"
 "Automatically source the Vimrc file on save.
