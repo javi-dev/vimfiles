@@ -22,6 +22,7 @@ Plugin 'ervandew/supertab'
 Plugin 'kkoenig/wimproved.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'mattn/emmet-vim'
+Plugin 'captbaritone/better-indent-support-for-php-with-html'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
