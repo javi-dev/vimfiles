@@ -16,6 +16,9 @@ set noerrorbells visualbell t_vb=
 set autowriteall
 "Use UTF-8 instead of the default Latin-1
 set encoding=utf-8
+"Make a copy of the file when saving instead of renaming
+"This ensures watchers (like webpack) to be notified of changes to files
+set backupcopy=yes
 
 "--------------Indentation---------------"
 filetype plugin indent on
