@@ -62,8 +62,10 @@ nmap <C-L> <C-W><C-L>
 nmap <Leader>ev :tabedit $HOME\vimfiles\vimrc.vim<cr>
 "Clear the highlighted search.
 nmap <Leader><space> :nohlsearch<cr>
-"Fix PSR-2 in the current file.
+"Fix PSR-2 in the current file using php-cs-fixer.
 nmap <Leader>p2 :!php-cs-fixer fix "%" --level=psr2<cr>
+"Fix PSR-2 in the current file using phpcbf.
+nmap <Leader>pb :!phpcbf --standard=PSR2 "%"<cr>
 
 "-------------Plugins--------------"
 "/
