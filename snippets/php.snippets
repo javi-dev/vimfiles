@@ -58,3 +58,23 @@ snippet class
 			${4}
 		}
 	}
+
+snippet phpunit
+	<?php
+
+	namespace ${1};
+
+	use PHPUnit_Framework_TestCase;
+
+	class ${2}Test extends PHPUnit_Framework_TestCase
+	{
+		public function setUp()
+		{
+			parent::setUp();
+		}
+
+		public function test_${3}()
+		{
+			${4}
+		}
+	}
