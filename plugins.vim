@@ -24,6 +24,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'mattn/emmet-vim'
 Plugin 'captbaritone/better-indent-support-for-php-with-html'
 Plugin 'posva/vim-vue'
+Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
