@@ -30,6 +30,10 @@ set softtabstop=4
 set shiftwidth=4
 "On pressing tab, insert 4 spaces.
 set expandtab
+"/
+"JavaScript
+"/
+autocmd FileType javascript setlocal softtabstop=2 shiftwidth=2
 
 "-----------------Visuals----------------"
 "Use 256 colors. This is useful for Terminal Vim.
