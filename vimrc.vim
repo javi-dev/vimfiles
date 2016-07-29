@@ -130,6 +130,10 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_php_checkers=['php', 'phpcs']
 let g:syntastic_php_phpcs_args='--standard=PSR2'
 "/
+" Sytastic JavaScript
+"/
+let g:syntastic_javascript_checkers=['standard']
+"/
 " vim-php-namespace
 "/
 function! IPhpInsertUse()
